@@ -388,6 +388,42 @@ function homePage() {
   </div>
 </section>
 
+<section class="section section--tight" id="journey" aria-labelledby="journey-title">
+  <div class="wrap">
+    <div class="journey">
+      <div class="journey__head reveal">
+        <span class="eyebrow journey__eyebrow">رحلتي · <span lang="en" dir="ltr">My Journey</span></span>
+        <h2 class="display h2" id="journey-title">محطات من رحلتي الشخصية والمهنية.</h2>
+      </div>
+      <div class="journey__grid">
+        <article class="journey__story reveal" lang="en" dir="ltr">
+          <figure class="journey__photo journey__photo--glow">
+            <img src="assets/img/graduation-day.jpeg" width="1254" height="1254" loading="lazy" decoding="async" alt="Graduation Day portrait in a black gown with a red stole and graduation cap, with the dates 13 May and 13 September 2026">
+          </figure>
+          <div class="journey__caption">
+            <span class="journey__label">My Journey</span>
+            <h3 class="journey__title">My New Beginning</h3>
+            <ol class="journey__timeline">
+              <li><strong>13 May</strong> — My Beginning.</li>
+              <li><strong>13 September 2026</strong> — My New Beginning.</li>
+            </ol>
+          </div>
+        </article>
+        <article class="journey__event reveal" lang="en" dir="ltr">
+          <span class="journey__label">Events &amp; Experiences</span>
+          <figure class="event-card">
+            <img src="assets/img/martech-expo-2024.jpeg" width="720" height="1280" loading="lazy" decoding="async" alt="Audience at the Martech Expo 2024 main stage, with the event title on a large curved screen">
+            <figcaption class="event-card__caption">
+              <span class="event-card__tag">MARTECH EXPO 2024</span>
+              <span class="event-card__desc">Marketing Technology &amp; Innovation Expo</span>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="wrap">
     <div class="cta-band reveal">
