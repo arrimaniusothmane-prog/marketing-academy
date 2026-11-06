@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>التجارة الإلكترونية — غلاف</title><style>
+@font-face{font-family:"Cairo";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Cairo-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Cairo";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Cairo-600.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Cairo";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Cairo-700.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Cairo";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Cairo-800.ttf") format("truetype");font-weight:800;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Tajawal-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Tajawal-500.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("file:///Users/mac/Desktop/sdam/assets/fonts/Tajawal-700.ttf") format("truetype");font-weight:700;font-display:swap}
+@page{size:A4;margin:19mm 17mm 20mm}
+*{box-sizing:border-box}
+html{direction:rtl}
+body{margin:0;font-family:"Cairo",sans-serif;color:#161613;font-size:10.4pt;line-height:1.85;background:#fff}
+h1,h2,h3,h4{font-family:"Tajawal","Cairo",sans-serif;margin:0;line-height:1.3}
+p{margin:0 0 7pt}
+ul,ol{margin:0 0 8pt;padding:0}
+li{margin:0 0 3pt}
+a{color:inherit;text-decoration:none}
+.print-cover{height:277mm;display:flex;flex-direction:column;justify-content:space-between;page-break-after:always;position:relative;overflow:hidden}
+.print-cover:before{content:"";position:absolute;inset-inline-start:-40mm;top:-40mm;width:120mm;height:120mm;border-radius:50%;background:#ff5500;opacity:.12}
+.cover-top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.cover-brand{display:flex;align-items:center;gap:8pt}
+.cover-bars{display:flex;align-items:flex-end;gap:2pt;height:26pt}
+.cover-bars i{display:block;width:5pt;background:#0a0a0a;border-radius:1pt}
+.cover-bars i:nth-child(1){height:14pt}
+.cover-bars i:nth-child(2){height:20pt}
+.cover-bars i:nth-child(3){height:26pt;background:#ff5500}
+.cover-bars i:nth-child(4){height:20pt}
+.cover-bars i:nth-child(5){height:14pt}
+.cover-word{font-family:"Tajawal",sans-serif;font-weight:700;font-size:20pt;line-height:1}
+.cover-word small{display:block;font-family:"Cairo",sans-serif;font-size:6.5pt;letter-spacing:3pt;color:#62625a;margin-top:2pt}
+.cover-label{font-size:8pt;letter-spacing:2pt;color:#62625a;font-weight:700}
+.cover-main{padding-block:8mm;position:relative;z-index:1}
+.cover-kicker{display:inline-block;padding:4pt 10pt;border:1pt solid #ff5500;border-radius:99pt;color:#ff5500;font-size:8pt;font-weight:700;margin-bottom:7mm}
+.cover-title{font-size:34pt;font-weight:700;color:#0a0a0a;max-width:150mm;margin-bottom:4mm}
+.cover-en{font-family:"Cairo",sans-serif;font-size:10pt;letter-spacing:2pt;color:#8a8a80;margin-bottom:6mm}
+.cover-tagline{font-size:15pt;font-weight:700;color:#ff5500;margin-bottom:5mm}
+.cover-desc{font-size:10.5pt;line-height:1.9;color:#3a3a35;max-width:150mm}
+.cover-meta{display:flex;gap:5mm;flex-wrap:wrap;margin-top:9mm}
+.cover-meta div{border:1pt solid #dcddd3;border-radius:5mm;padding:4mm 6mm;min-width:38mm}
+.cover-meta strong{display:block;font-family:"Tajawal",sans-serif;font-size:15pt;line-height:1.2}
+.cover-meta span{font-size:7.5pt;color:#62625a}
+.cover-foot{display:flex;justify-content:space-between;align-items:flex-end;border-top:1pt solid #dcddd3;padding-top:5mm;font-size:8pt;color:#62625a;position:relative;z-index:1}
+.cover-foot strong{color:#0a0a0a}
+.print-page{page-break-after:always}
+.print-page:last-child{page-break-after:auto}
+.print-h1{font-size:24pt;margin-bottom:4mm;color:#0a0a0a}
+.print-h2{font-size:16pt;margin:0 0 3mm;color:#0a0a0a}
+.print-h3{font-size:11.5pt;margin:0 0 2mm;color:#1d1d19}
+.print-kicker{font-size:7.5pt;letter-spacing:1.5pt;color:#ff5500;font-weight:700;margin-bottom:2mm}
+.print-lead{font-size:10.2pt;line-height:1.95;color:#44443e;margin-bottom:5mm}
+.print-meta{display:flex;flex-wrap:wrap;gap:2mm;margin-bottom:5mm}
+.print-pill{display:inline-block;border:1pt solid #dcddd3;border-radius:99pt;padding:1.5pt 7pt;font-size:7.5pt;color:#62625a}
+.print-toc{margin-top:4mm}
+.print-toc ol{list-style:none;counter-reset:toc}
+.print-toc li{display:flex;gap:4mm;padding:2.4mm 0;border-bottom:.6pt dashed #dcddd3;font-size:9.5pt}
+.print-toc li:before{counter-increment:toc;content:counter(toc,decimal-leading-zero);color:#ff5500;font-weight:700;font-size:8pt;min-width:7mm}
+.print-toc strong{font-weight:700}
+.print-toc span{color:#8a8a80;font-size:8pt;margin-inline-start:auto;white-space:nowrap}
+.print-lesson{page-break-before:always}
+.print-lesson-head{border-bottom:2pt solid #0a0a0a;padding-bottom:4mm;margin-bottom:5mm}
+.print-lesson-num{font-size:8pt;letter-spacing:1.6pt;color:#ff5500;font-weight:700}
+.print-lesson-title{font-size:21pt;margin:1mm 0 2mm}
+.print-lesson-meta{font-size:8pt;color:#62625a}
+.print-section{margin-bottom:5mm}
+.print-section h2{font-size:13pt;margin:0 0 2mm;display:flex;align-items:center;gap:2mm}
+.print-section h2:before{content:"";width:4pt;height:4pt;border-radius:50%;background:#ff5500;flex:none}
+.print-section p{text-align:justify}
+.print-objectives{display:grid;grid-template-columns:1fr 1fr;gap:1mm 6mm;list-style:none;padding:0}
+.print-objectives li{position:relative;padding-inline-start:4mm;font-size:9.5pt}
+.print-objectives li:before{content:"✓";position:absolute;inset-inline-start:0;color:#ff5500;font-weight:700}
+.print-terms{display:grid;grid-template-columns:38mm 1fr;gap:1mm 4mm;font-size:9pt}
+.print-terms dt{font-weight:700;color:#ff5500}
+.print-terms dd{margin:0}
+.print-example{padding:2.5mm 3mm;border-inline-start:2.5pt solid #ff5500;background:#faf8f4;margin-bottom:2.5mm;font-size:9.3pt}
+.print-steps{counter-reset:s;list-style:none;padding:0}
+.print-steps li{counter-increment:s;position:relative;padding-inline-start:7mm;margin-bottom:2mm;font-size:9.5pt}
+.print-steps li:before{content:counter(s,decimal-leading-zero);position:absolute;inset-inline-start:0;top:0;background:#0a0a0a;color:#fff;font-size:6.5pt;font-weight:700;padding:1pt 3pt;border-radius:2pt}
+.print-two{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.print-box{border:1pt solid #dcddd3;border-radius:3mm;padding:3mm;font-size:9pt}
+.print-box h3{margin-bottom:2mm;font-size:9.5pt}
+.print-box--good{border-color:#bfe3cf;background:#f3fbf6}
+.print-box--bad{border-color:#f2c9c5;background:#fdf6f5}
+.print-quiz{margin-bottom:4mm;page-break-inside:avoid}
+.print-quiz p{margin-bottom:1.5mm;font-weight:700;font-size:9.5pt}
+.print-quiz ol{list-style:none;padding:0;margin:0}
+.print-quiz li{font-size:9pt;padding:0.6mm 0;color:#44443e}
+.print-answer{margin-top:1.5mm;font-size:8pt;color:#1f7a4d}
+.print-summary{background:#0a0a0a;color:#f7f8f2;padding:4mm;border-radius:3mm;font-size:9.5pt;line-height:1.9}
+.print-next{border:.8pt dashed #c6c8bb;padding:3mm;border-radius:3mm;font-size:9.2pt;color:#44443e}
+.print-final{margin-top:4mm;padding:4mm;border:1pt solid #dcddd3;border-radius:3mm;background:#faf8f4}
+.print-final table{width:100%;border-collapse:collapse;font-size:8.6pt;margin-top:2mm}
+.print-final th,.print-final td{border-bottom:.6pt solid #dcddd3;padding:1.6mm 2mm;text-align:start;vertical-align:top}
+.print-final th{color:#62625a;font-weight:700}
+.print-foot{border-top:1pt solid #dcddd3;margin-top:8mm;padding-top:3mm;display:flex;justify-content:space-between;font-size:7.5pt;color:#8a8a80}
+.print-note{font-size:8pt;color:#8a8a80;line-height:1.7;margin-top:3mm}
+</style></head>
+<body>
+<div class="print-cover">
+  <div class="cover-top">
+    <div class="cover-brand"><span class="cover-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="cover-word">SDM13<small>ACADEMY</small></span></div>
+    <span class="cover-label">برنامج تدريبي · 03</span>
+  </div>
+  <div class="cover-main">
+    <span class="cover-kicker">E-commerce</span>
+    <h1 class="cover-title">التجارة الإلكترونية</h1>
+    <div class="cover-en">حوّل فكرة إلى متجر يبيع فعلًا</div>
+    <div class="cover-tagline">تعليم الشباب كيفية إنشاء وإدارة مشروع تجاري عبر الإنترنت.</div>
+    <p class="cover-desc">مسار عملي من اختيار المنتج ودراسة الطلب إلى بناء المتجر والتصوير والتسعير والدفع والتوصيل وخدمة العملاء، مع سياق مغربي واضح وتركيز على الاستدامة والربحية.</p>
+    <div class="cover-meta">
+      <div><strong>15</strong><span>درسًا كاملًا</span></div>
+      <div><strong>مبتدئ</strong><span>المستوى</span></div>
+      <div><strong>15 درسًا ·  16 ساعة تعلم</strong><span>المدة التقديرية</span></div>
+      <div><strong>6</strong><span>أسئلة تقييم نهائي</span></div>
+    </div>
+  </div>
+  <div class="cover-foot">
+    <span><strong>SDM13 ACADEMY</strong> — منصة تعلم عربية عملية</span>
+    <span>الإصدار 2026 · A4</span>
+  </div>
+</div>
+</body></html>

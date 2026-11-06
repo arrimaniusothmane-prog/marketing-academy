@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Analytics وGoogle Search Console — SDM13 ACADEMY</title>
+<meta name="description" content="Google Analytics وSearch Console أداتان مختلفتان: الأولى تقيس ما يحدث داخل موقعك بعد الزيارة، والثانية تخبرك كيف يظهر موقعك في بحث Google. الاثنتان لا تصنعان النجاح وحدهما، لكنهما تمنحانك معلومات لا يمكن رؤيتها بالحدس. في هذا الدرس ستتعلم الإعداد الأساسي، والتقارير المهمة، وكيف تحوّل القراءة إلى قرار.">
+<meta name="theme-color" content="#f7f8f2">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/css/style.css">
+
+</head>
+<body data-page="lesson" data-lesson="m2l14" data-module="m2" style="--accent:#0e7490;--accent-soft:#dff4f7">
+<a class="skip" href="#main">تجاوز إلى المحتوى</a>
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="../../index.html" aria-label="SDM13 ACADEMY — الصفحة الرئيسية">
+  <span class="brand__glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="brand__text"><span class="brand__name">SDM13</span><span class="brand__tag">ACADEMY</span></span>
+</a>
+    <nav aria-label="التنقل الرئيسي"><ul class="nav-links"><li><a href="../../index.html">الرئيسية</a></li><li><a href="../../training.html" aria-current="page">البرامج</a></li><li><a href="../../search.html">البحث</a></li><li><a href="../../contact.html">التواصل</a></li></ul></nav>
+    <div class="header-tools">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="التبديل إلى الوضع الداكن" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn--sm header-cta" href="../../training.html">ابدأ التعلم</a>
+      <button class="icon-btn nav-toggle" type="button" data-menu-open aria-label="فتح قائمة التنقل" aria-controls="mobile-menu" aria-expanded="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu" hidden role="dialog" aria-modal="true" aria-label="قائمة التنقل">
+  <div class="mobile-menu__top">
+    <a class="brand" href="../../index.html" aria-label="SDM13 ACADEMY — الصفحة الرئيسية">
+  <span class="brand__glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="brand__text"><span class="brand__name">SDM13</span><span class="brand__tag">ACADEMY</span></span>
+</a>
+    <button class="mobile-menu__close" type="button" data-menu-close>إغلاق</button>
+  </div>
+  <ul class="mobile-menu__links"><li><a href="../../index.html">الرئيسية</a></li><li><a href="../../training.html" aria-current="page">البرامج</a></li><li><a href="../../search.html">البحث</a></li><li><a href="../../contact.html">التواصل</a></li></ul>
+  <div class="mobile-menu__foot">
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="التبديل إلى الوضع الداكن" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
+    <span>أكاديمية عربية للتعلم العملي</span>
+  </div>
+</div>
+<main id="main">
+
+<section class="lesson-header" style="--accent:#0e7490;--accent-soft:#dff4f7">
+  <div class="wrap lesson-header__inner">
+    <div class="breadcrumb"><a href="../../index.html">الرئيسية</a><span aria-hidden="true">/</span><a href="../../training.html">البرامج</a><span aria-hidden="true">/</span><a href="../../modules/module-02.html">التسويق الرقمي</a><span aria-hidden="true">/</span><span>الدرس 14</span></div>
+    <div class="lesson-kicker">
+      <span class="pill pill--accent">المسار 02 · التسويق الرقمي</span>
+      <span class="pill">الدرس 14 من 14</span>
+      <span class="pill"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 60 دقيقة</span>
+      <span class="pill">مبتدئ</span>
+    </div>
+    <h1 class="display">Google Analytics وGoogle Search Console</h1>
+    <p class="lesson-header__lead">Google Analytics وSearch Console أداتان مختلفتان: الأولى تقيس ما يحدث داخل موقعك بعد الزيارة، والثانية تخبرك كيف يظهر موقعك في بحث Google. الاثنتان لا تصنعان النجاح وحدهما، لكنهما تمنحانك معلومات لا يمكن رؤيتها بالحدس. في هذا الدرس ستتعلم الإعداد الأساسي، والتقارير المهمة، وكيف تحوّل القراءة إلى قرار.</p>
+    <div class="lesson-toolbar">
+      <button class="done-btn" type="button" data-done-lesson="m2l14" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg> <span data-done-label>أكملت هذا الدرس</span></button>
+      <a class="btn btn--ghost btn--sm" href="../../public/pdfs/SDM13-Digital-Marketing.pdf" download><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> PDF المسار</a>
+      <a class="btn btn--ghost btn--sm" href="../../modules/module-02.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg> كل الدروس</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap lesson-layout">
+  <article class="lesson-article">
+    <section class="lesson-section" id="intro">
+      <h2><span class="num">01</span> مقدمة الدرس</h2>
+      <p>Google Analytics وSearch Console أداتان مختلفتان: الأولى تقيس ما يحدث داخل موقعك بعد الزيارة، والثانية تخبرك كيف يظهر موقعك في بحث Google. الاثنتان لا تصنعان النجاح وحدهما، لكنهما تمنحانك معلومات لا يمكن رؤيتها بالحدس. في هذا الدرس ستتعلم الإعداد الأساسي، والتقارير المهمة، وكيف تحوّل القراءة إلى قرار.</p>
+    </section>
+
+    <section class="lesson-section" id="objectives">
+      <h2><span class="num">02</span> أهداف الدرس</h2>
+      <ul class="objective-list"><li>التمييز بين وظيفة Analytics ووظيفة Search Console.</li><li>إعداد تتبع أساسي للأحداث والتحويلات.</li><li>قراءة تقارير الزيارات والمصادر والصفحات.</li><li>فهم تقارير الاستعلامات والفهرسة في Search Console.</li><li>بناء تقرير شهري من خمسة أرقام فقط.</li></ul>
+    </section>
+
+    <section class="lesson-section" id="theory">
+      <h2><span class="num">03</span> الشرح النظري</h2>
+      <div class="theory-block">
+        <h3>ما تقيسه كل أداة</h3>
+        <p>Google Analytics يقيس سلوك الزائر على الموقع: عدد المستخدمين، مصادر الزيارات، الصفحات، مدة الجلسة، الأحداث مثل النقر على واتساب أو إتمام طلب. يساعدك على فهم ما يحدث بعد وصول الشخص. Search Console يقيس ظهور موقعك في بحث Google: الاستعلامات، النقرات، الظهور، متوسط الترتيب، الصفحات المفهرسة، والأخطاء التقنية.</p><p>لا تستخدم Analytics لمعرفة كلمات البحث التي جاءت منها الزيارات بشكل كامل؛ خصوصية البحث تحدّ من ذلك. استخدم Search Console لتحليل الاستعلامات، وAnalytics لتحليل السلوك بعد الزيارة. ربط الأداتين يعطيك صورة أوضح، لكنه لا يغني عن سؤال العملاء مباشرة.</p>
+      </div><div class="theory-block">
+        <h3>الإعداد والأحداث</h3>
+        <p>أنشئ حسابًا وخاصية للموقع، وضع وسم Google في كل الصفحات أو عبر مدير العلامات. اختبر أن البيانات تصل باستخدام تقرير الوقت الحقيقي. حدد الأحداث المهمة: نقر واتساب، إرسال نموذج، إضافة إلى السلة، إتمام شراء، تنزيل PDF. حوّل الحدث إلى تحويل عندما يكون نتيجة تجارية.</p><p>في Search Console، أضف الموقع وتحقق من الملكية عبر DNS أو ملف HTML أو وسم. أرسل خريطة الموقع، واطلب فهرسة الصفحات المهمة عند الحاجة. راقب «الصفحات» لأخطاء الفهرسة و«تجربة البحث» للأداء. لا تطلب فهرسة كل صفحة يوميًا؛ ابدأ بالصفحات الأساسية.</p>
+      </div><div class="theory-block">
+        <h3>القراءة والقرار</h3>
+        <p>ابدأ من خمسة أرقام: المستخدمون، مصدر الزيارة الأساسي، معدل التحويل، الصفحة الأكثر خروجًا، والاستعلامات ذات الظهور العالي والنقر المنخفض. اسأل: هل الزيارة من الجمهور المستهدف؟ هل الصفحة تجيب عن السؤال؟ هل هناك عائق تقني؟ ثم اكتب قرارًا واحدًا قابلًا للاختبار.</p><p>أنشئ تقريرًا شهريًا من صفحة واحدة: الهدف، الأرقام، ما تغير، السبب المحتمل، القرار، والخطوة التالية. لا تغرق في كل التقارير. الأدوات وسيلة للإجابة عن أسئلة العمل، لا لجمع لوحات جميلة. وإذا لم تفهم رقمًا، لا تبنِ عليه قرارًا؛ ابحث عن مصدره وطريقة حسابه أولًا.</p>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="terms">
+      <h2><span class="num">04</span> مصطلحات أساسية</h2>
+      <dl class="term-list"><div><dt>الحدث</dt><dd>تفاعل محدد على الموقع مثل النقر أو التنزيل أو إتمام الطلب.</dd></div><div><dt>التحويل</dt><dd>حدث مهم يمثل نتيجة تجارية أو هدفًا محددًا.</dd></div><div><dt>الفهرسة</dt><dd>عملية اكتشاف محركات البحث للصفحات وتخزينها لتظهر في النتائج.</dd></div></dl>
+    </section>
+
+    <section class="lesson-section" id="examples">
+      <h2><span class="num">05</span> أمثلة من الواقع المغربي</h2>
+      <ul class="example-list"><li>متجر في الدار البيضاء يضيف حدث «نقر واتساب» في صفحة المنتج. يكتشف أن 200 شخص ينقرون ولا يرسلون رسالة. يراجع الصفحة فيجد أن زر واتساب يفتح دون نص جاهز. يضيف رسالة مسبقة توضح المنتج والمقاس. تزيد الرسائل دون زيادة الزيارات.</li><li>مدونة تعليمية تربط Search Console وتلاحظ أن صفحة عن «تعلم Canva» تظهر 5000 مرة وتُنقر 50 مرة. العنوان غير واضح والوصف عام. تعيد كتابة العنوان والوصف وتضيف إجابة سريعة في أول فقرة. ترتفع النقرات تدريجيًا، ويعيد التحقق بعد شهر.</li></ul>
+    </section>
+
+    <section class="lesson-section" id="steps">
+      <h2><span class="num">06</span> خطوات تطبيقية</h2>
+      <ol class="numbered"><li>أنشئ خاصية Analytics وضع الوسم على كل الصفحات.</li><li>حدد ثلاثة أحداث مهمة واختبر وصول البيانات.</li><li>أضف الموقع إلى Search Console وتحقق من الملكية.</li><li>أرسل خريطة الموقع وراجع أخطاء الفهرسة.</li><li>أنشئ تقريرًا شهريًا من خمسة أرقام وثلاث ملاحظات.</li><li>اكتب قرارًا واحدًا واختبره على صفحة أو حملة.</li></ol>
+    </section>
+
+    <section class="lesson-section" id="tips">
+      <h2><span class="num">07</span> نصائح عملية</h2>
+      <ul class="objective-list"><li>اختبر التتبع قبل الاعتماد على الأرقام.</li><li>اربط الأحداث بالنتائج التجارية لا بالنقرات فقط.</li><li>راقب الاتجاهات على مدى أسابيع لا يومًا واحدًا.</li><li>لا تشارك بيانات العملاء أو تتبعهم دون موافقة.</li><li>اجعل التقرير صفحة واحدة قابلة للقراءة.</li></ul>
+    </section>
+
+    <section class="lesson-section" id="mistakes">
+      <h2><span class="num">08</span> أخطاء شائعة</h2>
+      <div class="split-cards">
+        <div class="mini-card mini-card--good">
+          <h3>افعل هذا</h3>
+          <ul><li>اختبر التتبع قبل الاعتماد على الأرقام.</li><li>اربط الأحداث بالنتائج التجارية لا بالنقرات فقط.</li><li>راقب الاتجاهات على مدى أسابيع لا يومًا واحدًا.</li></ul>
+        </div>
+        <div class="mini-card mini-card--bad">
+          <h3>تجنّب هذا</h3>
+          <ul><li>إنشاء الحساب دون اختبار وصول البيانات.</li><li>الاعتماد على Analytics لمعرفة كل كلمات البحث.</li><li>تجاهل أخطاء الفهرسة.</li><li>جمع تقارير كثيرة دون قرار.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="exercise">
+      <h2><span class="num">09</span> تمرين تطبيقي</h2>
+      <div class="exercise">
+        <div class="exercise__title">تقرير شهري من صفحة واحدة</div>
+        <p class="exercise__brief">اجمع أهم مؤشرات الموقع في تقرير يوجه قرارًا واحدًا.</p>
+        <ol class="numbered"><li>حدد الهدف الشهري ومؤشر النتيجة.</li><li>اختر خمسة أرقام من Analytics وSearch Console.</li><li>اكتب ما تغير وسببًا محتملًا لكل تغير مهم.</li><li>حدد قرارًا واحدًا وخطوة تالية وموعد مراجعة.</li><li>جهّز حدثًا واحدًا جديدًا واختبره.</li></ol>
+        <p class="exercise__deliverable"><strong>المطلوب تسليمه:</strong> تقرير صفحة واحدة: هدف، خمسة أرقام، ثلاث ملاحظات، قرار، خطوة تالية.</p>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="quiz">
+      <h2><span class="num">10</span> تقييم سريع</h2>
+      <p class="muted" style="font-size:12.5px;margin-bottom:14px">أجب عن الأسئلة التالية. ستظهر الإجابة الصحيحة مع شرح قصير بعد كل اختيار.</p>
+      <div class="quiz" id="quiz-m2l14">
+  <div class="quiz__head">
+    <span class="quiz__score" data-quiz-score>النتيجة: <strong>0</strong> من 5</span>
+    <button class="btn btn--ghost btn--sm" type="button" data-quiz-reset>إعادة المحاولة</button>
+  </div>
+  <div class="quiz-q" data-answered="">
+    <div class="quiz-q__title"><span class="quiz-q__num">1</span><span>ما الفرق بين Analytics وSearch Console؟</span></div>
+    <div class="quiz-options">
+      <button class="quiz-option" type="button" data-correct="true">
+        <span class="quiz-option__key">أ</span><span>Analytics لسلوك الموقع، وSearch Console لظهور البحث</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ب</span><span>لا فرق</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ج</span><span>Search Console لإدارة المخزون</span>
+      </button>
+    </div>
+    <div class="quiz-feedback" data-explain="كل أداة تغطي جانبًا مختلفًا من الرحلة."></div>
+  </div><div class="quiz-q" data-answered="">
+    <div class="quiz-q__title"><span class="quiz-q__num">2</span><span>ما الحدث؟</span></div>
+    <div class="quiz-options">
+      <button class="quiz-option" type="button" data-correct="true">
+        <span class="quiz-option__key">أ</span><span>تفاعل محدد مثل نقر أو تنزيل</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ب</span><span>عدد المتابعين</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ج</span><span>اسم النشاط</span>
+      </button>
+    </div>
+    <div class="quiz-feedback" data-explain="الأحداث تقيس التفاعلات المهمة داخل الموقع."></div>
+  </div><div class="quiz-q" data-answered="">
+    <div class="quiz-q__title"><span class="quiz-q__num">3</span><span>لماذا نختبر التتبع؟</span></div>
+    <div class="quiz-options">
+      <button class="quiz-option" type="button" data-correct="true">
+        <span class="quiz-option__key">أ</span><span>للتأكد من وصول البيانات قبل القرار</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ب</span><span>لزيادة سرعة الموقع</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ج</span><span>لتغيير التصميم</span>
+      </button>
+    </div>
+    <div class="quiz-feedback" data-explain="بيانات غير موثوقة تؤدي إلى قرارات خاطئة."></div>
+  </div><div class="quiz-q" data-answered="">
+    <div class="quiz-q__title"><span class="quiz-q__num">4</span><span>أي تقرير في Search Console يفيد لتحسين العنوان؟</span></div>
+    <div class="quiz-options">
+      <button class="quiz-option" type="button" data-correct="true">
+        <span class="quiz-option__key">أ</span><span>تقرير الاستعلامات والنقرات والظهور</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ب</span><span>تقرير المخزون</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ج</span><span>تقرير الألوان</span>
+      </button>
+    </div>
+    <div class="quiz-feedback" data-explain="الاستعلامات ذات الظهور العالي والنقر المنخفض تكشف فرص التحسين."></div>
+  </div><div class="quiz-q" data-answered="">
+    <div class="quiz-q__title"><span class="quiz-q__num">5</span><span>ما شكل التقرير الشهري المفيد؟</span></div>
+    <div class="quiz-options">
+      <button class="quiz-option" type="button" data-correct="true">
+        <span class="quiz-option__key">أ</span><span>صفحة واحدة بأرقام وملاحظات وقرار</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ب</span><span>مئة صفحة من كل التقارير</span>
+      </button><button class="quiz-option" type="button" data-correct="false">
+        <span class="quiz-option__key">ج</span><span>لقطة شاشة بلا شرح</span>
+      </button>
+    </div>
+    <div class="quiz-feedback" data-explain="التقرير الجيد يقود إلى قرار، لا إلى مزيد من البيانات."></div>
+  </div>
+</div>
+    </section>
+
+    <section class="lesson-section" id="summary">
+      <h2><span class="num">11</span> خلاصة الدرس</h2>
+      <div class="summary-box">Analytics يخبرك بما يحدث بعد الزيارة، وSearch Console يخبرك كيف يظهر موقعك في البحث. أعدّ التتبع، واختبره، وراقب الأحداث المهمة، واربط الأداتين. اقرأ خمسة أرقام فقط واكتب قرارًا واحدًا. الأدوات تخدم سؤال العمل، ولا تغني عن فهم الجمهور والاختبار.</div>
+    </section>
+
+    <section class="lesson-section" id="next">
+      <h2><span class="num">12</span> الاستعداد للدرس التالي</h2>
+      <div class="next-box"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><p>بهذا الدرس يكتمل مسار التسويق الرقمي. قبل الانتقال إلى التجارة الإلكترونية، تأكد من أنك تستطيع بناء خطة تسويق صغيرة، وإنتاج محتوى، وإدارة حملة، وقراءة تقرير أساسي. هذه المهارات ستطبقها مباشرة على متجر إلكتروني حقيقي.</p></div>
+    </section>
+
+    <nav class="lesson-nav" aria-label="التنقل بين الدروس">
+      <a href="../../lessons/module-02/lesson-13.html"><span>السابق</span><strong>تحليل البيانات وقياس النتائج</strong></a>
+      <a href="../../modules/module-03.html"><span>التالي</span><strong>المسار التالي: التجارة الإلكترونية</strong></a>
+    </nav>
+  </article>
+
+  <aside class="lesson-toc" aria-label="محتويات الدرس">
+    <h2>محتويات الدرس</h2>
+    <ol><li><a href="#intro">مقدمة الدرس</a></li><li><a href="#objectives">أهداف الدرس</a></li><li><a href="#theory">الشرح النظري</a></li><li><a href="#terms">مصطلحات أساسية</a></li><li><a href="#examples">أمثلة مغربية</a></li><li><a href="#steps">خطوات تطبيقية</a></li><li><a href="#tips">نصائح عملية</a></li><li><a href="#mistakes">أخطاء شائعة</a></li><li><a href="#exercise">تمرين تطبيقي</a></li><li><a href="#quiz">تقييم سريع</a></li><li><a href="#summary">خلاصة الدرس</a></li><li><a href="#next">الدرس التالي</a></li></ol>
+    <a class="lesson-toc__pdf" href="../../public/pdfs/SDM13-Digital-Marketing.pdf" download><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> تحميل PDF المسار</a>
+    <a class="lesson-toc__pdf" href="../../modules/module-02.html"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg> جميع دروس المسار</a>
+  </aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__about">
+        <a class="brand" href="../../index.html" aria-label="SDM13 ACADEMY — الصفحة الرئيسية">
+  <span class="brand__glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="brand__text"><span class="brand__name">SDM13</span><span class="brand__tag">ACADEMY</span></span>
+</a>
+        <p>منصة تعليمية عربية تجمع أربعة مسارات عملية في تطوير الذات والتسويق الرقمي والتجارة الإلكترونية والتصميم الجرافيكي، مع دروس وتمارين وملفات PDF قابلة للتحميل.</p>
+      </div>
+      <div class="site-footer__col">
+        <h2>المسارات</h2>
+        <ul><li><a href="../../modules/module-01.html">تطوير الذات</a></li><li><a href="../../modules/module-02.html">التسويق الرقمي</a></li><li><a href="../../modules/module-03.html">التجارة الإلكترونية</a></li><li><a href="../../modules/module-04.html">التصميم الجرافيكي</a></li></ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>المنصة</h2>
+        <ul>
+          <li><a href="../../training.html">جميع البرامج</a></li>
+          <li><a href="../../search.html">البحث في الدروس</a></li>
+          <li><a href="../../contact.html">تواصل معنا</a></li>
+          <li><a href="../../public/pdfs/SDM13-Personal-Development.pdf">ملفات PDF</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>تواصل</h2>
+        <ul>
+          <li><a href="https://wa.me/212706868909" rel="noopener" target="_blank">واتساب: +212 706 868 909</a></li>
+          <li>التقدم يُحفظ على جهازك</li>
+          <li>بدون تسجيل أو حسابات</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 SDM13 ACADEMY. جميع الحقوق محفوظة.</span>
+      <span>صُمم لدعم التعلم العربي العملي · 49 درسًا · 4 مسارات</span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/progress-data.js"></script>
+<script src="../../assets/js/search-index.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>

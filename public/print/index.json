@@ -1,0 +1,34 @@
+[
+  {
+    "id": "m1",
+    "code": "01",
+    "title": "تطوير الذات",
+    "cover": "public/print/01-cover.html",
+    "body": "public/print/01-body.html",
+    "pdf": "public/pdfs/SDM13-Personal-Development.pdf"
+  },
+  {
+    "id": "m2",
+    "code": "02",
+    "title": "التسويق الرقمي",
+    "cover": "public/print/02-cover.html",
+    "body": "public/print/02-body.html",
+    "pdf": "public/pdfs/SDM13-Digital-Marketing.pdf"
+  },
+  {
+    "id": "m3",
+    "code": "03",
+    "title": "التجارة الإلكترونية",
+    "cover": "public/print/03-cover.html",
+    "body": "public/print/03-body.html",
+    "pdf": "public/pdfs/SDM13-Ecommerce.pdf"
+  },
+  {
+    "id": "m4",
+    "code": "04",
+    "title": "التصميم الجرافيكي",
+    "cover": "public/print/04-cover.html",
+    "body": "public/print/04-body.html",
+    "pdf": "public/pdfs/SDM13-Graphic-Design.pdf"
+  }
+]
