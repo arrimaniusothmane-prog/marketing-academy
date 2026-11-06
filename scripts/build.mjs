@@ -923,15 +923,15 @@ function searchIndex() {
 }
 
 function printFonts() {
-  const base = path.join(ROOT, "assets/fonts").replace(/\\/g, "/");
+  const base = "../../assets/fonts";
   return `
-@font-face{font-family:"Cairo";src:url("file://${base}/Cairo-400.ttf") format("truetype");font-weight:400;font-display:swap}
-@font-face{font-family:"Cairo";src:url("file://${base}/Cairo-600.ttf") format("truetype");font-weight:600;font-display:swap}
-@font-face{font-family:"Cairo";src:url("file://${base}/Cairo-700.ttf") format("truetype");font-weight:700;font-display:swap}
-@font-face{font-family:"Cairo";src:url("file://${base}/Cairo-800.ttf") format("truetype");font-weight:800;font-display:swap}
-@font-face{font-family:"Tajawal";src:url("file://${base}/Tajawal-400.ttf") format("truetype");font-weight:400;font-display:swap}
-@font-face{font-family:"Tajawal";src:url("file://${base}/Tajawal-500.ttf") format("truetype");font-weight:500;font-display:swap}
-@font-face{font-family:"Tajawal";src:url("file://${base}/Tajawal-700.ttf") format("truetype");font-weight:700;font-display:swap}`;
+@font-face{font-family:"Cairo";src:url("${base}/Cairo-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Cairo";src:url("${base}/Cairo-600.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Cairo";src:url("${base}/Cairo-700.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Cairo";src:url("${base}/Cairo-800.ttf") format("truetype");font-weight:800;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("${base}/Tajawal-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("${base}/Tajawal-500.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Tajawal";src:url("${base}/Tajawal-700.ttf") format("truetype");font-weight:700;font-display:swap}`;
 }
 
 function printCss() {

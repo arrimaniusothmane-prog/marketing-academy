@@ -2,7 +2,9 @@ import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
-const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const CHROME = process.env.CHROME_PATH || (process.platform === "darwin"
+  ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  : "google-chrome");
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const PORT = 9333;
 const USER_DIR = "/tmp/sdm13-chrome-check";
